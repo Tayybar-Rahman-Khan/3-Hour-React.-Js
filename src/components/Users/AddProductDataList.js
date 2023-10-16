@@ -13,6 +13,7 @@ const UserDataList = (props) => {
                     (
                         <li key={user.id}>
                             {user.name} {user.age} {user.college} {user.category}
+                            <button onClick={() => props.onDeleteUser(user.id)}>Delete</button>
                         </li>
                     )
                     :
@@ -29,6 +30,7 @@ const UserDataList = (props) => {
                     (
                         <li key={user.id}>
                             {user.name} {user.age} {user.college} {user.category}
+                            <button onClick={() => props.onDeleteUser(user.id)}>Delete</button>
                         </li>
                     )
                     :
@@ -45,6 +47,7 @@ const UserDataList = (props) => {
                     (
                         <li key={user.id}>
                             {user.name} {user.age} {user.college} {user.category}
+                            <button onClick={() => props.onDeleteUser(user.id)}>Delete</button>
                         </li>
                     )
                     :
@@ -52,14 +55,6 @@ const UserDataList = (props) => {
                 )}
                 </ul>
             </ul>
-            {/* <ul>Electronics</ul>
-            <ul>
-                {props.users.map((user) => (
-                    <li key={user.id}>
-                        {user.name} {user.age} {user.college} {user.category}
-                    </li>
-                ))}
-            </ul> */}
         </Card>
     );
 };
